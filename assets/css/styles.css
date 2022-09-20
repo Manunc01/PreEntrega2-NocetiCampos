@@ -1,0 +1,203 @@
+html{height: 100%;}
+body{
+    height: 100%;
+    background-image:url(../media/fondo.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* ----------------------------Esta seccion es para el header y el menu de navegacion */
+
+
+.navCon{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.133);
+}
+.navCon__cuenta{
+    margin-left: 10px;
+}
+.navCon__logo{
+    width: 150px;
+    height: 50px;
+}
+.navCon__boton{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.navCon__menu{
+    padding: 0;
+    width: 100%;
+    height: 0vh;
+    position: fixed;
+    margin-top: 0;
+    top: 80px;
+    background-image: url(../media/fondo.png);
+    text-align: center;
+    transition: all 0.1s;
+}
+.navCon__menu li{
+    display: none;
+    margin: 50px;
+    padding: 3vh;
+    transition: all 0.6s;
+}
+.navCon__menu li a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+.navCon__menu li a.active, .navCon__menu li a:hover{
+    color: gray;
+    transition: 0.3s;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .navCon__menu{
+    height: 100vh;
+}
+#check:checked ~ .navCon__menu li{
+    display: block;
+}
+/*
+--------------------------------------Contenido de la pagina
+*/
+.title{
+    text-align: center;
+}
+strong{
+    font-family: 'Dancing Script', cursive;
+    font-size: larger;
+}
+.outfitsDia{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.478);
+}
+.outfitsDia img{
+    width: 70vw;
+    padding: 10px;
+}
+.outfitsDia__grupo{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.236);
+}
+.outfitsDia__outfit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 10px;
+    text-align: center;
+}
+.outfitsDia__title{
+    color: white;
+}
+/*
+-------------------------------Tiendas y ubicacion
+*/
+.tiendas{
+    margin-top: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.mapa{
+    width: 60vw;
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 2vh;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1.3fr 1.7fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "mapa__title"
+      "mapa__text"
+      "mapa__img";
+  }
+  
+  .mapa__title { grid-area: mapa__title; }
+  
+  .mapa__text { grid-area: mapa__text; }
+  
+  .mapa__img { grid-area: mapa__img; }
+  
+.mapa__title{
+    display: flex;
+    align-items: center;
+}
+.mapa__title>label{
+ font-size:x-large;
+}
+.mapa__img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mapa__img>img{
+    width: 50vw;
+    height: 25vh;
+}
+.mapa__img>a{
+    color: black;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: medium;
+}
+.mapa__gmap{
+    display: none;
+}
+
+
+/*
+ Footer 
+*/
+.seguinos{
+    text-align: center;
+    margin-top: 5%; 
+    text-decoration: none;
+   }
+
+.redes {
+    display: flex;
+    flex-direction: row;
+     margin-top: 5%;
+     padding-inline: 10px;
+     width: 100vw;
+     justify-content: space-between;
+     
+} 
+.redes>a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: fit-content;
+    text-decoration: none;
+     color: black;
+     padding: 20px;
+     
+}
+.redes>a:visited{
+    text-decoration: inherit;
+    color: inherit;
+}
+.redes>a>label{
+    display: none;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}

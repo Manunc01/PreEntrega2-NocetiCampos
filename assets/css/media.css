@@ -1,4 +1,4 @@
-@media screen and (min-width:600px) {
+@media screen and (min-width:768px) {
     /*
 
     Navegación y Logo
@@ -103,11 +103,15 @@
     }
     .mapa__img>img{
         width: 17vw;
-        height: 33vh;
+        height: 22vh;
     }
     .mapa__gmap{
         display: flex;
         justify-content: center;
+    }
+    .mapa_gmap>iframe{
+        width:60vw;
+        height: 20vh;
     }
     .mapa__img>a{
         display: none;

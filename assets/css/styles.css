@@ -252,6 +252,37 @@ input[type=checkbox] {
   background: #fffffd; }
 
 /*
+  -------------------------------- Sección sobre nosotros  --------------------------------
+*/
+.aboutus {
+  display: flex;
+  justify-content: center; }
+
+.aboutus__cont {
+  height: fit-content;
+  background-color: #ffffff2f;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  align-items: center;
+  text-align: center;
+  margin-top: 3em;
+  padding: 1em; }
+
+.aboutus__img {
+  width: 600px;
+  padding: 20px; }
+
+.aboutus__p {
+  display: block;
+  width: 80vw;
+  font-size: 18px; }
+
+strong {
+  font-family: 'Dancing Script', cursive;
+  font-size: larger; }
+
+/*
 --------------------------------------- Footer --------------------------------
 */
 .seguinos {
@@ -397,6 +428,14 @@ footer {
     */
   .formu__field {
     width: 500px; }
+  /*
+    seccion "sobre-nosotros"
+    */
+  .aboutus {
+    margin-top: 90px; }
+  .aboutus__p {
+    width: 500px;
+    padding: 10px; }
   /*
     Footer
     */

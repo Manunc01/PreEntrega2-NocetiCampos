@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto Tovama</title>
+    <title>Registrarse Tovama</title>
     <link rel="shortcut icon" href="media/tovama-icono2.svg">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css"/>
@@ -12,9 +12,6 @@
 <body>
         <header>
             <nav class="navCon">
-                <div class="navCon__cuenta">
-                    <a href="login.html"><img src="media/login_icon.svg" alt="cuenta" ></a>
-                </div>
                 <div>
                     <img src="media/tovama-logo2.svg" alt="logo tovama" class="navCon__logo">
                 </div>
@@ -24,28 +21,35 @@
                 </label>
                 <ul class="navCon__menu">
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a class="active" href="#">Contacto</a></li>
-                <li><a href="tiendas.html">Tiendas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a class="active" href="#">Tiendas</a></li>
                 <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
             </nav>
         </header>
         <main>
             <form class="formu">
                 <fieldset class = "formu__field">
-                    <h2>Contactanos</h2>
-                    <label for="full_name">Nombre Completo:</label> 
-                    <input type="text" name="full_name" id="full_name"placeholder="Fulanito de Tal"/>
-
-                    <label for="correo">Correo Electrónico:</label>
-                    <input type="email" name="correo" id="correo" placeholder="fulanito@email.com"/>
-                    
-                    <label for="message">Mensaje:</label>
-                    <textarea name="message" id="message" cols="30" rows="10"
-                    placeholder="Escribe tu mensaje aqui"></textarea>
-                    
-                    <input class="myButton" type="submit" value="Enviar"/>
-                    
-                    <input type="reset" class="myButton" value="Borrar" />
+                <h2>Registrarse</h2>
+                    <label for="first_name">Nombre</label>
+                    <input type="text" name="first_name" id="first_name">
+                    <br>
+                    <label for="last_name">Apellido/s</label>
+                    <input type="text" name="last_name" id="last_name">
+                    <br>
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" name="correo" id="correo"/>
+                    <br>
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña"/>
+                    <br>
+                    <label for="contraseña_dos">Repetir Contraseña</label>
+                    <input type="password" name="contraseña_dos" id="contraseña_dos"/>
+                    <br>
+                    <br>
+                    <input class="myButton" type="submit" value="Registrarse"/>
+                    <div class="formu__registrarse">
+                        <a href="login.html">Ya tienes una cuenta? Inicia sesión</a>
+                    </div>
                 </fieldset>
             </form>
         </main>

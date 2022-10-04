@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tovama</title>
-    <link rel="shortcut icon" href="media/tovama-icono2.png">
+    <title>Iniciar Sesión Tovama</title>
+    <link rel="shortcut icon" href="media/tovama-icono2.svg">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css"/>
 </head>
@@ -13,11 +13,11 @@
         <header>
             <nav class="navCon">
                 <div>
-                    <img src="media/tovama-logo2.png" alt="logo tovama" class="navCon__logo">
+                    <img src="media/tovama-logo2.svg" alt="logo tovama" class="navCon__logo">
                 </div>
                 <input type="checkbox" id="check">
                 <label for="check" class="navCon__boton">
-                    <img src="media/boton_hamburguesa.png" alt="menu">
+                    <img src="media/boton_hamburguesa.svg" alt="menu">
                 </label>
                 <ul class="navCon__menu">
                 <li><a href="../index.html">Inicio</a></li>
@@ -27,21 +27,40 @@
             </nav>
         </header>
         <main>
-
+            <form class="formu">
+                <fieldset class = "formu__field">
+                    <h2>Iniciar Sesión</h2>
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" name="correo" id="correo"/>
+                    <br>
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña"/>
+                    <br>
+                    <div class="formu__check">
+                        <input type="checkbox" name="mantener" id="mantener">
+                        <label for="mantener">Mantener sesión iniciada</label>
+                    </div>
+                    <br>
+                    <input class="myButton" type="submit" value="Entrar"/>
+                    <div class="formu__registrarse">
+                        <a href="register.html">No tienes cuenta? Registrate aqui</a>
+                    </div>
+                </fieldset>
+            </form>
         </main>
         <footer>
             <div class="redes">
                 <a href="https://www.instagram.com/tovama.indumentaria/">
                     <img name="logo-ig"
-                    id="logo-ig" alt="instagram" src="media/logo-ig-mediano.png">
+                    id="logo-ig" alt="instagram" src="media/logo-ig-mediano.svg">
                     <label for="logo-ig">@tovama.indumentaria</label>
                 </a>
                 <a href="https://www.facebook.com/tovama.indumentaria">
-                    <img name="logo-fb" id="logo-fb" alt="facebook" src="media/logo-facebook-mediano.png">
+                    <img name="logo-fb" id="logo-fb" alt="facebook" src="media/logo-facebook-mediano.svg">
                     <label for="logo-fb">tovama.indumentaria</label>
                 </a>
                 <a href="tel:01140055078">
-                    <img name="iconTelefono" id="iconTelefono" alt="telefono" src="media/iconotelefono.png">
+                    <img name="iconTelefono" id="iconTelefono" alt="telefono" src="media/iconotelefono.svg">
                     <label for="logo-fb">011 4005-5078</label>
                 </a>
             </div>

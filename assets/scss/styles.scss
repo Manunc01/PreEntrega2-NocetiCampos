@@ -276,7 +276,7 @@ background: rgb(255, 255, 253);}
     padding: 1em;
 }
 .aboutus__img{
-    width: 600px;
+    width: 90vw;
     padding: 20px;
 }
 .aboutus__p{
@@ -471,6 +471,9 @@ footer{
         p{
          @include espacio(500px,10px)
         }
+    }
+    .aboutus__img{
+        width: 600px;
     }
     /*
     Footer

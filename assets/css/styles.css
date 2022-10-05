@@ -255,6 +255,7 @@ input[type=checkbox] {
   -------------------------------- Sección sobre nosotros  --------------------------------
 */
 .aboutus {
+  margin-top: 90px;
   display: flex;
   justify-content: center; }
 
@@ -270,7 +271,7 @@ input[type=checkbox] {
   padding: 1em; }
 
 .aboutus__img {
-  width: 90vw;
+  width: 85vw;
   padding: 20px; }
 
 .aboutus__p {

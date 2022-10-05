@@ -433,14 +433,14 @@ footer {
     */
   .aboutus {
     margin-top: 90px; }
-  .aboutus__p {
-    width: 500px;
-    padding: 10px; }
+    .aboutus p {
+      width: 500px;
+      padding: 10px; }
   /*
     Footer
     */
   .redes {
     justify-content: space-around; }
-  .redes > a > label {
-    display: inline;
-    margin-left: 10px; } }
+    .redes label {
+      display: inline;
+      margin-left: 10px; } }

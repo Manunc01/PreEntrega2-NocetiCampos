@@ -460,22 +460,28 @@ footer{
     /*
     seccion "sobre-nosotros"
     */
+    @mixin espacio($width, $padding){
+        width: $width;
+        padding: $padding
+    }
+
     .aboutus{
         margin-top: 90px;
-    }
-    .aboutus__p{
-        width: 500px;
-        padding: 10px;
+        
+        p{
+         @include espacio(500px,10px)
+        }
     }
     /*
     Footer
     */
     .redes{
         justify-content: space-around;
+        label{
+            display: inline;
+            margin-left: 10px;
+        }
     }
-    .redes>a>label{
-        display: inline;
-        margin-left: 10px;
-    }
+    
     
 }
